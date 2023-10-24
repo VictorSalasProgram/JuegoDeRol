@@ -263,10 +263,11 @@ namespace JuegoDeRol.Presentacion
             btn_volver.Visible = false;
             pnl_fichas .Visible = false;
             panel1 .Visible = false;
-            pnl_principal.BackgroundImage = Image.FromFile("C:\\Users\\uSer\\source\\repos\\JuegoDeRol\\JuegoDeRol\\Imagenes\\fondo_carga1.jpg");
+            pnl_principal.BackgroundImage = Image.FromFile("C:\\Users\\uSer\\source\\repos\\JuegoDeRol\\JuegoDeRol\\JuegoDeRol\\Imagenes\\fondo_carga1.jpg");
             pnl_principal.BackgroundImageLayout = ImageLayout.Stretch;
             pbar_cargando.BringToFront();
             pbar_cargando.Visible = true;
+            lbl_titulocarga.Visible = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -282,6 +283,7 @@ namespace JuegoDeRol.Presentacion
                 // Llegaste al valor máximo o a un punto de referencia deseado.
                 // Puedes detener el Timer si es necesario.
                 timer1.Stop();
+                Application.Exit();
             }
         }
     }

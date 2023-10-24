@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Seleccion_personaje));
             this.pnl_principal = new System.Windows.Forms.Panel();
+            this.pcb_cargando = new System.Windows.Forms.PictureBox();
             this.lbl_carga_personaje = new System.Windows.Forms.Label();
             this.pbar_cargando = new System.Windows.Forms.ProgressBar();
             this.btn_jugar = new System.Windows.Forms.Button();
@@ -56,8 +57,9 @@
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.btn_volver = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pcb_cargando = new System.Windows.Forms.PictureBox();
+            this.lbl_titulocarga = new System.Windows.Forms.Label();
             this.pnl_principal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_cargando)).BeginInit();
             this.fpnl_personajes.SuspendLayout();
             this.pnl_caballero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_caballero)).BeginInit();
@@ -70,7 +72,6 @@
             this.pnl_co.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_co)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_cargando)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_principal
@@ -78,6 +79,7 @@
             this.pnl_principal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
             this.pnl_principal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl_principal.BackgroundImage")));
             this.pnl_principal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnl_principal.Controls.Add(this.lbl_titulocarga);
             this.pnl_principal.Controls.Add(this.pcb_cargando);
             this.pnl_principal.Controls.Add(this.lbl_carga_personaje);
             this.pnl_principal.Controls.Add(this.pbar_cargando);
@@ -93,6 +95,17 @@
             this.pnl_principal.Name = "pnl_principal";
             this.pnl_principal.Size = new System.Drawing.Size(1734, 858);
             this.pnl_principal.TabIndex = 1;
+            // 
+            // pcb_cargando
+            // 
+            this.pcb_cargando.Image = ((System.Drawing.Image)(resources.GetObject("pcb_cargando.Image")));
+            this.pcb_cargando.Location = new System.Drawing.Point(50, 676);
+            this.pcb_cargando.Name = "pcb_cargando";
+            this.pcb_cargando.Size = new System.Drawing.Size(24, 27);
+            this.pcb_cargando.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcb_cargando.TabIndex = 0;
+            this.pcb_cargando.TabStop = false;
+            this.pcb_cargando.Visible = false;
             // 
             // lbl_carga_personaje
             // 
@@ -389,16 +402,17 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pcb_cargando
+            // lbl_titulocarga
             // 
-            this.pcb_cargando.Image = ((System.Drawing.Image)(resources.GetObject("pcb_cargando.Image")));
-            this.pcb_cargando.Location = new System.Drawing.Point(50, 676);
-            this.pcb_cargando.Name = "pcb_cargando";
-            this.pcb_cargando.Size = new System.Drawing.Size(24, 27);
-            this.pcb_cargando.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcb_cargando.TabIndex = 0;
-            this.pcb_cargando.TabStop = false;
-            this.pcb_cargando.Visible = false;
+            this.lbl_titulocarga.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_titulocarga.Font = new System.Drawing.Font("Consolas", 20F);
+            this.lbl_titulocarga.Location = new System.Drawing.Point(471, 81);
+            this.lbl_titulocarga.Name = "lbl_titulocarga";
+            this.lbl_titulocarga.Size = new System.Drawing.Size(899, 81);
+            this.lbl_titulocarga.TabIndex = 12;
+            this.lbl_titulocarga.Text = "SwissLand Kingdom.";
+            this.lbl_titulocarga.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_titulocarga.Visible = false;
             // 
             // Seleccion_personaje
             // 
@@ -410,6 +424,7 @@
             this.Name = "Seleccion_personaje";
             this.Size = new System.Drawing.Size(1734, 858);
             this.pnl_principal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_cargando)).EndInit();
             this.fpnl_personajes.ResumeLayout(false);
             this.pnl_caballero.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_caballero)).EndInit();
@@ -422,7 +437,6 @@
             this.pnl_co.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_co)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_cargando)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -456,5 +470,6 @@
         private System.Windows.Forms.Label lbl_carga_personaje;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pcb_cargando;
+        private System.Windows.Forms.Label lbl_titulocarga;
     }
 }
