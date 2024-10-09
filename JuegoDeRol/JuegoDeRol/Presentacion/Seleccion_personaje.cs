@@ -275,16 +275,32 @@ namespace JuegoDeRol.Presentacion
             if (pbar_cargando.Value + 1 <= pbar_cargando.Maximum)
             {
                 pbar_cargando.Value += 1;
+                if (pbar_cargando.Value == pbar_cargando.Maximum)
+                {
+                    timer1.Stop();
+                    DialogResult resultado = MessageBox.Show("ENTRASTE AL JUEGO", "Aviso del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                    do
+                    {
+                        resultado = MessageBox.Show("ENTRASTE AL JUEGO", "Aviso del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
 
-                
+                        // Si el usuario selecciona "Cancelar", el bucle continuará y se volverá a mostrar el cuadro de diálogo
+
+                    } while (resultado != DialogResult.OK); // El bucle se repite hasta que se selecciona "Aceptar"
+
+                    // Una vez que se selecciona "Aceptar", se cierra la aplicación
+                    Application.Exit();
+                }
+
+
+
             }
-            else
-            {
-                // Llegaste al valor máximo o a un punto de referencia deseado.
-                // Puedes detener el Timer si es necesario.
-                timer1.Stop();
-                Application.Exit();
-            }
+            //else
+            //{
+            //    // Llegaste al valor máximo o a un punto de referencia deseado.
+            //    // Puedes detener el Timer si es necesario.
+            //    timer1.Stop();
+            //    Application.Exit();
+            //}
         }
     }
 }
