@@ -82,6 +82,12 @@
     <Compile Include="Presentacion\Ctl_principal.Designer.cs">
       <DependentUpon>Ctl_principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Cuenta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Cuenta.Designer.cs">
+      <DependentUpon>Cuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Ficha_caballero.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentacion\Ctl_principal.resx">
       <DependentUpon>Ctl_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Cuenta.resx">
+      <DependentUpon>Cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ficha_caballero.resx">
       <DependentUpon>Ficha_caballero.cs</DependentUpon>

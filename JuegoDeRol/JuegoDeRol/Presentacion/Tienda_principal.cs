@@ -12,6 +12,11 @@ namespace JuegoDeRol.Presentacion
 {
     public partial class Tienda_principal : UserControl
     {
+        public void volver_al_menu()
+        {
+            pnl_principal.Controls.Clear();
+            pnl_principal.Controls.Add(new Ctl_principal());
+        }
         public Tienda_principal()
         {
             InitializeComponent();
@@ -75,10 +80,10 @@ namespace JuegoDeRol.Presentacion
 
         private void btn_volver_Click_1(object sender, EventArgs e)
         {
-            pnl_principal.Controls.Clear();
-            pnl_principal.Controls.Add(new Ctl_principal());
+            volver_al_menu();
         }
 
+      
         private void Tienda_principal_Load(object sender, EventArgs e)
         {
             txt_oro.Text = oro.ToString();
@@ -818,6 +823,11 @@ namespace JuegoDeRol.Presentacion
             {
                 MessageBox.Show("Oro insuficiente", "Aviso del sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Seleccion_personaje));
             this.pnl_principal = new System.Windows.Forms.Panel();
+            this.lbl_titulocarga = new System.Windows.Forms.Label();
             this.pcb_cargando = new System.Windows.Forms.PictureBox();
             this.lbl_carga_personaje = new System.Windows.Forms.Label();
             this.pbar_cargando = new System.Windows.Forms.ProgressBar();
@@ -57,7 +58,6 @@
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.btn_volver = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.lbl_titulocarga = new System.Windows.Forms.Label();
             this.pnl_principal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_cargando)).BeginInit();
             this.fpnl_personajes.SuspendLayout();
@@ -93,8 +93,20 @@
             this.pnl_principal.Location = new System.Drawing.Point(0, 0);
             this.pnl_principal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_principal.Name = "pnl_principal";
-            this.pnl_principal.Size = new System.Drawing.Size(1734, 858);
+            this.pnl_principal.Size = new System.Drawing.Size(1773, 951);
             this.pnl_principal.TabIndex = 1;
+            // 
+            // lbl_titulocarga
+            // 
+            this.lbl_titulocarga.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_titulocarga.Font = new System.Drawing.Font("Consolas", 20F);
+            this.lbl_titulocarga.Location = new System.Drawing.Point(471, 81);
+            this.lbl_titulocarga.Name = "lbl_titulocarga";
+            this.lbl_titulocarga.Size = new System.Drawing.Size(899, 81);
+            this.lbl_titulocarga.TabIndex = 12;
+            this.lbl_titulocarga.Text = "SwissLand Kingdom.";
+            this.lbl_titulocarga.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_titulocarga.Visible = false;
             // 
             // pcb_cargando
             // 
@@ -372,7 +384,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1734, 112);
+            this.panel1.Size = new System.Drawing.Size(1773, 112);
             this.panel1.TabIndex = 1;
             // 
             // lbl_titulo
@@ -402,18 +414,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // lbl_titulocarga
-            // 
-            this.lbl_titulocarga.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_titulocarga.Font = new System.Drawing.Font("Consolas", 20F);
-            this.lbl_titulocarga.Location = new System.Drawing.Point(471, 81);
-            this.lbl_titulocarga.Name = "lbl_titulocarga";
-            this.lbl_titulocarga.Size = new System.Drawing.Size(899, 81);
-            this.lbl_titulocarga.TabIndex = 12;
-            this.lbl_titulocarga.Text = "SwissLand Kingdom.";
-            this.lbl_titulocarga.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_titulocarga.Visible = false;
-            // 
             // Seleccion_personaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -422,7 +422,7 @@
             this.Controls.Add(this.pnl_principal);
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Name = "Seleccion_personaje";
-            this.Size = new System.Drawing.Size(1734, 858);
+            this.Size = new System.Drawing.Size(1773, 951);
             this.pnl_principal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcb_cargando)).EndInit();
             this.fpnl_personajes.ResumeLayout(false);

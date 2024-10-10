@@ -279,20 +279,20 @@ namespace JuegoDeRol.Presentacion
                 {
                     timer1.Stop();
                     DialogResult resultado = MessageBox.Show("ENTRASTE AL JUEGO", "Aviso del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
-                    do
-                    {
-                        resultado = MessageBox.Show("ENTRASTE AL JUEGO", "Aviso del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                   do
+    {
+        resultado = MessageBox.Show("ENTRASTE AL JUEGO", "Aviso del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+        
+        // Si el usuario selecciona "Cancelar", el bucle continuará y se volverá a mostrar el cuadro de diálogo
 
-                        // Si el usuario selecciona "Cancelar", el bucle continuará y se volverá a mostrar el cuadro de diálogo
+    } while (resultado != DialogResult.OK); // El bucle se repite hasta que se selecciona "Aceptar"
 
-                    } while (resultado != DialogResult.OK); // El bucle se repite hasta que se selecciona "Aceptar"
+    // Una vez que se selecciona "Aceptar", se cierra la aplicación
+    Application.Exit();
+}
+                   
 
-                    // Una vez que se selecciona "Aceptar", se cierra la aplicación
-                    Application.Exit();
-                }
-
-
-
+                
             }
             //else
             //{

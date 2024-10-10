@@ -58,5 +58,23 @@ namespace JuegoDeRol.Presentacion
                 formularioPrincipal.pnl_principal.Controls.Add(control);
             }
         }
+
+        private void btn_cuenta_Click(object sender, EventArgs e)
+        {
+            // Buscar el formulario principal actual
+            Frm_principal formularioPrincipal = Application.OpenForms.OfType<Frm_principal>().FirstOrDefault();
+
+            if (formularioPrincipal != null)
+            {
+                // Crear una instancia del control Seleccion_personaje
+                Cuenta control = new Cuenta();
+
+                // Limpiar el contenido del panel pnl_principal
+                formularioPrincipal.pnl_principal.Controls.Clear();
+
+                // Agregar el control Seleccion_personaje al panel pnl_principal
+                formularioPrincipal.pnl_principal.Controls.Add(control);
+            }
+        }
     }
 }

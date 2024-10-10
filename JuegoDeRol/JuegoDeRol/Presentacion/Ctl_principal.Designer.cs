@@ -91,6 +91,7 @@
             this.btn_cuenta.TabIndex = 2;
             this.btn_cuenta.Text = "Cuenta";
             this.btn_cuenta.UseVisualStyleBackColor = false;
+            this.btn_cuenta.Click += new System.EventHandler(this.btn_cuenta_Click);
             // 
             // btn_tienda
             // 
