@@ -34,7 +34,7 @@ namespace JuegoDeRol.Presentacion
         private void btn_volver_Click(object sender, EventArgs e)
         {
            panel1.Controls.Clear();
-            panel1.Controls.Add(new Ctl_principal());
+           panel1.Controls.Add(new Ctl_principal());
         }
 
     

@@ -76,6 +76,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentacion\CargarPartida.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\CargarPartida.Designer.cs">
+      <DependentUpon>CargarPartida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Ctl_principal.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentacion\CargarPartida.resx">
+      <DependentUpon>CargarPartida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ctl_principal.resx">
       <DependentUpon>Ctl_principal.cs</DependentUpon>
     </EmbeddedResource>

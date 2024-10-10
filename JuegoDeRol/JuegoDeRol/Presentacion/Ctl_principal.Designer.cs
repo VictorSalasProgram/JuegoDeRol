@@ -79,6 +79,7 @@
             this.btn_cargarp.TabIndex = 1;
             this.btn_cargarp.Text = "Cargar Partida";
             this.btn_cargarp.UseVisualStyleBackColor = false;
+            this.btn_cargarp.Click += new System.EventHandler(this.btn_cargarp_Click);
             // 
             // btn_cuenta
             // 
