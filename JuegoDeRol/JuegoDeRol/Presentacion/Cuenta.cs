@@ -13,10 +13,20 @@ namespace JuegoDeRol.Presentacion
     public partial class Cuenta : UserControl
     {
         int partidaGuardada = 0;
+        string nombreUsuario = "Admin";
+        string nickname = "Administrador";
+        string contraseña = "admin123";
+        string correo = "correoadministrador@correo.com";
+  
+        
         public Cuenta()
         {
             InitializeComponent();
             cmb_pais.SelectedIndex = 9;
+            txt_nombre_usuario.Text = nombreUsuario;
+            txt_contraseña.Text = contraseña;
+            txt_nickname.Text = nickname;
+            txt_correo.Text = correo;
             
         }
 
@@ -29,21 +39,42 @@ namespace JuegoDeRol.Presentacion
     
         private void btn_volver_Click_1(object sender, EventArgs e)
         {
-            if (partidaGuardada == 0)
+
+            if (txt_nombre_usuario.Text != nombreUsuario || txt_nickname.Text != nickname || txt_correo.Text != correo || txt_contraseña.Text != contraseña)
             {
-              DialogResult resultado=  MessageBox.Show("Desea regresar sin guardar?","Aviso del sistema",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                DialogResult resultado=  MessageBox.Show("Desea regresar sin guardar?","Aviso del sistema",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
                 if (resultado == DialogResult.Yes)
                 {
                     pnl_principal.Controls.Clear();
                     pnl_principal.Controls.Add(new Ctl_principal());
                 }
+
+                else
+                {
+                    pnl_principal.Controls.Clear();
+                    pnl_principal.Controls.Add(new Ctl_principal());
+                }
             }
-            else
-            {
+            else{
                 pnl_principal.Controls.Clear();
                 pnl_principal.Controls.Add(new Ctl_principal());
+
             }
-           
+            //if (partidaGuardada == 0)
+            //{
+            //  DialogResult resultado=  MessageBox.Show("Desea regresar sin guardar?","Aviso del sistema",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            //    if (resultado == DialogResult.Yes)
+            //    {
+            //        pnl_principal.Controls.Clear();
+            //        pnl_principal.Controls.Add(new Ctl_principal());
+            //    }
+            //}
+            //else
+            //{
+            //    pnl_principal.Controls.Clear();
+            //    pnl_principal.Controls.Add(new Ctl_principal());
+            //}
+
         }
 
         private void btn_seleccionar_Click(object sender, EventArgs e)

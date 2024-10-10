@@ -42,8 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txt_nombre_usuario = new System.Windows.Forms.TextBox();
             this.txt_nickname = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_contraseña = new System.Windows.Forms.TextBox();
+            this.txt_correo = new System.Windows.Forms.TextBox();
             this.cmb_pais = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.pnl_principal.SuspendLayout();
@@ -117,8 +117,8 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.cmb_pais);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txt_correo);
+            this.panel2.Controls.Add(this.txt_contraseña);
             this.panel2.Controls.Add(this.txt_nickname);
             this.panel2.Controls.Add(this.txt_nombre_usuario);
             this.panel2.Controls.Add(this.label5);
@@ -211,30 +211,30 @@
             this.txt_nickname.Text = "Administrador";
             this.txt_nickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txt_contraseña
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.textBox2.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Location = new System.Drawing.Point(324, 220);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(405, 34);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.Text = "Admin";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_contraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txt_contraseña.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_contraseña.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_contraseña.Location = new System.Drawing.Point(324, 220);
+            this.txt_contraseña.Name = "txt_contraseña";
+            this.txt_contraseña.PasswordChar = '*';
+            this.txt_contraseña.Size = new System.Drawing.Size(405, 34);
+            this.txt_contraseña.TabIndex = 8;
+            this.txt_contraseña.Text = "admin123";
+            this.txt_contraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txt_correo
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.textBox3.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.Location = new System.Drawing.Point(324, 306);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(405, 34);
-            this.textBox3.TabIndex = 9;
-            this.textBox3.Text = "correoadmnistrador@correo.com";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_correo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.txt_correo.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_correo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_correo.Location = new System.Drawing.Point(324, 306);
+            this.txt_correo.Name = "txt_correo";
+            this.txt_correo.Size = new System.Drawing.Size(405, 34);
+            this.txt_correo.TabIndex = 9;
+            this.txt_correo.Text = "correoadmnistrador@correo.com";
+            this.txt_correo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cmb_pais
             // 
@@ -295,9 +295,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_nombre_usuario;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_contraseña;
         private System.Windows.Forms.TextBox txt_nickname;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_correo;
         private System.Windows.Forms.ComboBox cmb_pais;
     }
 }
